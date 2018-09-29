@@ -1,0 +1,28 @@
+.puzzle-bg {
+    background-color: rgb(192, 192, 192);
+    width:570px;
+    height: 570px;
+    padding:10px;
+}
+
+.mini_block {
+    margin: 0px;
+    margin-bottom: 5px;
+    padding: 5px;
+    width: 170px;
+    border-style: solid;
+    display: inline-block;
+}
+
+.square {
+    border-style: solid;
+    border-color: rgb(138, 138, 138);
+    padding: 0px;
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+}
+
+.help {
+    margin: 10px;
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body onload="init()">
+    <div class="help">
+        Enter your puzzle in the squares below and hit solve.
+    </div>
+
+    <div class="puzzle-bg">
+        <div class="mini_block">
+            <input type="text" class="square" id="sq00"/>
+            <input type="text" class="square" id="sq01"/>
+            <input type="text" class="square" id="sq02"/>
+            <br>
+            <input type="text" class="square" id="sq10"/>
+            <input type="text" class="square" id="sq11"/>
+            <input type="text" class="square" id="sq12"/>
+            <br>
+            <input type="text" class="square" id="sq20"/>
+            <input type="text" class="square" id="sq21"/>
+            <input type="text" class="square" id="sq22"/>
+        </div>
+        <div class="mini_block">
+            <input type="text" class="square" id="sq03"/>
+            <input type="text" class="square" id="sq04"/>
+            <input type="text" class="square" id="sq05"/>
+            <br>
+            <input type="text" class="square" id="sq13"/>
+            <input type="text" class="square" id="sq14"/>
+            <input type="text" class="square" id="sq15"/>
+            <br>
+            <input type="text" class="square" id="sq23"/>
+            <input type="text" class="square" id="sq24"/>
+            <input type="text" class="square" id="sq25"/>
+        </div>
+        <div class="mini_block">
+            <input type="text" class="square" id="sq06"/>
+            <input type="text" class="square" id="sq07"/>
+            <input type="text" class="square" id="sq08"/>
+            <br>
+            <input type="text" class="square" id="sq16"/>
+            <input type="text" class="square" id="sq17"/>
+            <input type="text" class="square" id="sq18"/>
+            <br>
+            <input type="text" class="square" id="sq26"/>
+            <input type="text" class="square" id="sq27"/>
+            <input type="text" class="square" id="sq28"/>
+        </div>
+        <br>
+        <div class="mini_block">
+            <input type="text" class="square" id="sq30"/>
+            <input type="text" class="square" id="sq31"/>
+            <input type="text" class="square" id="sq32"/>
+            <br>
+            <input type="text" class="square" id="sq40"/>
+            <input type="text" class="square" id="sq41"/>
+            <input type="text" class="square" id="sq42"/>
+            <br>
+            <input type="text" class="square" id="sq50"/>
+            <input type="text" class="square" id="sq51"/>
+            <input type="text" class="square" id="sq52"/>
+        </div>
+        <div class="mini_block">
+            <input type="text" class="square" id="sq33"/>
+            <input type="text" class="square" id="sq34"/>
+            <input type="text" class="square" id="sq35"/>
+            <br>
+            <input type="text" class="square" id="sq43"/>
+            <input type="text" class="square" id="sq44"/>
+            <input type="text" class="square" id="sq45"/>
+            <br>
+            <input type="text" class="square" id="sq53"/>
+            <input type="text" class="square" id="sq54"/>
+            <input type="text" class="square" id="sq55"/>
+        </div>
+        <div class="mini_block">
+            <input type="text" class="square" id="sq36"/>
+            <input type="text" class="square" id="sq37"/>
+            <input type="text" class="square" id="sq38"/>
+            <br>
+            <input type="text" class="square" id="sq46"/>
+            <input type="text" class="square" id="sq47"/>
+            <input type="text" class="square" id="sq48"/>
+            <br>
+            <input type="text" class="square" id="sq56"/>
+            <input type="text" class="square" id="sq57"/>
+            <input type="text" class="square" id="sq58"/>
+        </div>
+        <br>
+        <div class="mini_block">
+            <input type="text" class="square" id="sq60"/>
+            <input type="text" class="square" id="sq61"/>
+            <input type="text" class="square" id="sq62"/>
+            <br>
+            <input type="text" class="square" id="sq70"/>
+            <input type="text" class="square" id="sq71"/>
+            <input type="text" class="square" id="sq72"/>
+            <br>
+            <input type="text" class="square" id="sq80"/>
+            <input type="text" class="square" id="sq81"/>
+            <input type="text" class="square" id="sq82"/>
+        </div>
+        <div class="mini_block">
+            <input type="text" class="square" id="sq63"/>
+            <input type="text" class="square" id="sq64"/>
+            <input type="text" class="square" id="sq65"/>
+            <br>
+            <input type="text" class="square" id="sq73"/>
+            <input type="text" class="square" id="sq74"/>
+            <input type="text" class="square" id="sq75"/>
+            <br>
+            <input type="text" class="square" id="sq83"/>
+            <input type="text" class="square" id="sq84"/>
+            <input type="text" class="square" id="sq85"/>
+        </div>
+        <div class="mini_block">
+            <input type="text" class="square" id="sq66"/>
+            <input type="text" class="square" id="sq67"/>
+            <input type="text" class="square" id="sq68"/>
+            <br>
+            <input type="text" class="square" id="sq76"/>
+            <input type="text" class="square" id="sq77"/>
+            <input type="text" class="square" id="sq78"/>
+            <br>
+            <input type="text" class="square" id="sq86"/>
+            <input type="text" class="square" id="sq87"/>
+            <input type="text" class="square" id="sq88"/>
+        </div>
+    </div>
+
+    <div>
+        <button onclick="clearPuzzle()">Clear</button>
+        <button onclick="solvePuzzle()">Solve!</button>
+    </div>
+</body>
+</html>
